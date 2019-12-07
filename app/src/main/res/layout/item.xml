@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/ll_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/subreddit" />
+
+            <TextView
+                android:id="@+id/tv_subreddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="subreddit"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="author"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="20sp"
+            android:layout_below="@+id/ll_tv"
+            android:layout_marginTop="3dp"/>
+
+        <ImageView
+            android:id="@+id/imv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imv_title"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/comment_icon" />
+
+            <TextView
+                android:id="@+id/tv_coment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="coment"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
